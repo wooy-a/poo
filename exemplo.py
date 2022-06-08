@@ -12,7 +12,7 @@ class Empregado(Pessoa): #Filho; subclasse
     #deve ser passado os parametros da classe pai que serão usados na classe filho
     def __init__(self, nome, sobrenome, idade: int, matricula: int): 
         self.matricula = matricula
-        
+
             #super() está invocando parametro
         super().__init__(nome, sobrenome, idade)
 
@@ -32,10 +32,19 @@ class Chefe(Pessoa): #Filho; subclasse
         super().infoP()
         print('Matrícula: ', self.matricula)
 
-print('-'*30)
+name = str(input('Nome: '))
+lastname = str(input('Sobrenome: '))
+age = int(input('Idade: '))
+id = int(input('Matricula: '))
+
 p1 = Chefe('Maria', 'Silva', 23, 1)
 p1.infoC()
 print('-'*30)
+
 p2 = Empregado('João', 'Santos', 28, 1365)
 p2.infoE()
+print('-'*30)
+
+p3 = Chefe(name, lastname, age, id)
+p3.infoC()
 print('-'*30)
