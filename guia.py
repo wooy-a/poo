@@ -1,14 +1,15 @@
-#método update(): atualiza a lista com elementos de outro objeto
+#função update() -> atualiza a lista com elementos de outro objeto
+#função super() -> invoca um metodo ou parametro da classe pai
 
-#classe = molde
+#classe -> molde
 class Usuario:
 
     #variavel da classe
     nome_variavel_exemplo = 1234
 
-#método = função da classe
-    #def: método = precisa da instancia
-    #__init__: construtor // o mais próximo que existe de um construtor
+#método -> função da classe
+    #def: método -> precisa da instancia
+    #__init__ -> construtor // o mais próximo que existe de um construtor
     def __init__(self):
         self.exemplo_variavel = {}
 
@@ -16,24 +17,24 @@ class Usuario:
     def nome_do_método(self):
         pass
 
-#@classmethod = só precisa da variavel da classe
+#@classmethod -> só precisa da variavel da classe
     @classmethod
     def exemplo_method2(cls):
         pass
 
-#@staticmethod = não precisa de nenhum dos dois (instância ou variavel da classe)
+#@staticmethod -> não precisa de nenhum dos dois (instância ou variavel da classe)
     @staticmethod 
     def exemplo_method3():
         pass
 
-#getter e setter = proteção/filtro dos atributos
-    #getter = obter um valor antes de passar para a classe
-    #@property = obtem esse valor para acessar fora da classe
+#getter e setter -> proteção/filtro dos atributos
+    #getter -> obter um valor antes de passar para a classe
+    #@property -> obtem esse valor para acessar fora da classe
     @property 
     def nome_variavel(self):
         return self._nome_variavel
 
-#setter = informar o valor à classe
+#setter -> informar o valor à classe
 #@nome_variavel.setter precisa do @property antes
     @nome_variavel.setter
     def nome_variavel(self):
@@ -41,7 +42,7 @@ class Usuario:
         novo_nome_variavel: None
         self._nome_variavel = novo_nome_variavel
 
-#encapsulamento = esconder partes do código para proteger classe/método
+#encapsulamento -> esconder partes do código para proteger classe/método
     #public, protected, private
         
         #público: acessivel dentro e fora da classe
@@ -53,15 +54,15 @@ class Usuario:
             #self.__nome da variavel 
 
 #instância
-    #nome da instancia = classe que ela faz parte()
+    #nome da instancia -> classe que ela faz parte()
 usuario = Usuario()
 #alterar valor da variavel da classe
-    #nome da classe.nome da variavel da classe = 'novo valor'
+    #nome da classe.nome da variavel da classe -> 'novo valor'
 Usuario.nome_variavel_exemplo = 4321
 
 '''***********************************************************'''
 
-#associação = uma classe se relaciona com outra classe mas são independentes
+#associação -> uma classe se relaciona com outra classe mas são independentes
     #usa
 
 class Nome01:
@@ -94,7 +95,7 @@ variavel01.valor01.acao02()
 print('*'*30)
 '''***********************************************************'''
 
-    #agregação = uma classe usa outra classe e precisa da outra classe
+    #agregação -> uma classe usa outra classe e precisa da outra classe
         #tem
 
 class nome_classe_01:
@@ -134,7 +135,7 @@ print(variavel_nome01.acao03())
 print('*'*30)
 '''***********************************************************'''
 
-    #composição = uma classe vai ser dona de objetos de outra classe
+    #composição -> uma classe vai ser dona de objetos de outra classe
     #se for apagada as outras classes também serão apagadas
         #é dono
 
@@ -174,7 +175,7 @@ user03.print_value03()
 print('*'*30)
 '''***********************************************************'''
 
-#herança = a nova classe herda os atributos e comportamentos dessa classe existente
+#herança -> a nova classe herda os atributos e comportamentos dessa classe existente
     #é
 
     #superclasse:
