@@ -63,6 +63,7 @@ Usuario.nome_variavel_exemplo = 4321
 
 #associação = uma classe se relaciona com outra classe mas são independentes
     #usa
+
 class Nome01:
     def __init__(self, valor01):
         self.__valor01 = None
@@ -90,10 +91,12 @@ variavel01.valor01 = variavel02
 #a classe Nome01 executou um método da classe Nome02
 variavel01.valor01.acao02()
 
+print('*'*30)
 '''***********************************************************'''
 
     #agregação = uma classe usa outra classe e precisa da outra classe
         #tem
+
 class nome_classe_01:
     def __init__(self):
         self.nome01 = []
@@ -128,11 +131,13 @@ variavel_nome01.acao01(variavel_nome04)
 variavel_nome01.acao02()
 print(variavel_nome01.acao03())
 
+print('*'*30)
 '''***********************************************************'''
 
     #composição = uma classe vai ser dona de objetos de outra classe
     #se for apagada as outras classes também serão apagadas
         #é dono
+
 class Name01:
     def __init__(self, value01, value02):
         self.value01 = value01
@@ -168,7 +173,8 @@ user03.print_value03()
 
 print('*'*30)
 '''***********************************************************'''
-#herança = 
+
+#herança = a nova classe herda os atributos e comportamentos dessa classe existente
     #é
 
     #superclasse:
